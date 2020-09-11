@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+# Make some actions work since new Rails version (5>) have removed part of "ActionView"
+gem 'record_tag_helper', '~> 1.0'
 # Annotate models
 gem 'annotate', '~> 2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
